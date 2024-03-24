@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    card_view:cardBackgroundColor="@color/rojoc"
+    card_view:cardCornerRadius="16dp"
+    card_view:cardElevation="1dp"
+    card_view:cardUseCompatPadding="false"
+    android:onClick="onClickWeb"
+    card_view:contentPadding="10dp">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvrowdetailapellido"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/rojoO"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/white"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivrowdetail"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="8dp"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toBottomOf="@+id/tvrowdetailapellido"
+        card_view:srcCompat="@drawable/driver" />
+
+    <TextView
+        android:id="@+id/tvrowdetailpodiums"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        android:textColor="@color/white"
+        card_view:layout_constraintBottom_toBottomOf="parent"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toBottomOf="@+id/ivrowdetail" />
+
+    <TextView
+        android:id="@+id/tvrowdetailpuntos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/white"
+        card_view:layout_constraintEnd_toStartOf="@+id/tvrowdetailcumpleanos"
+        card_view:layout_constraintHorizontal_bias="0.98"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toBottomOf="@+id/tvrowdetailpodiums" />
+
+    <TextView
+        android:id="@+id/tvrowdetailcumpleanos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="TextView"
+        android:textColor="@color/white"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintStart_toEndOf="@+id/tvrowdetailpuntos"
+        card_view:layout_constraintTop_toBottomOf="@+id/tvrowdetailpodiums" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Podiums:"
+        android:textColor="@color/white"
+        card_view:layout_constraintBottom_toBottomOf="parent"
+        card_view:layout_constraintEnd_toStartOf="@+id/tvrowdetailpodiums"
+        card_view:layout_constraintHorizontal_bias="0.924"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toBottomOf="@+id/ivrowdetail"
+        card_view:layout_constraintVertical_bias="0.375" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
